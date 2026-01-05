@@ -1,3 +1,5 @@
+import 'package:cookeasy/auth_wrapper.dart';
+import 'package:cookeasy/features/auth/login_screen.dart';
 import 'package:cookeasy/features/recipes/recipe_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -23,7 +25,7 @@ class CookEasyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'CookEasy',
       theme: AppTheme.lightTheme,
-      home: const HomeScreen(),
+      home: const AuthWrapper(),
     );
   }
 }
